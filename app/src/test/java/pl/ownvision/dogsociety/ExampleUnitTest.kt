@@ -1,4 +1,4 @@
-package pl.ownvision.dogcompanyfinder
+package pl.ownvision.dogsociety
 
 import org.junit.Test
 import org.junit.Assert.*

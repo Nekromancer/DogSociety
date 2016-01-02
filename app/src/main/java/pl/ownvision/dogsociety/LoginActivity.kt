@@ -1,4 +1,4 @@
-package pl.ownvision.dogcompanyfinder
+package pl.ownvision.dogsociety
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
