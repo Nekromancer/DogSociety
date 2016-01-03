@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import com.digits.sdk.android.Digits
 import com.digits.sdk.android.DigitsAuthButton;
 
 class LoginActivity : AppCompatActivity() {
@@ -17,7 +18,6 @@ class LoginActivity : AppCompatActivity() {
         val digitsButton = findViewById(R.id.auth_button) as DigitsAuthButton
         val callback = (application as MainApplication).getDigitsAuthCallback()
         digitsButton.setCallback(callback)
-
 
         val fab = findViewById(R.id.fab) as FloatingActionButton
         fab.setOnClickListener {
