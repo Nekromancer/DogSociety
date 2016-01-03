@@ -3,7 +3,6 @@ package pl.ownvision.dogsociety
 import android.app.Application
 import android.widget.Toast
 import com.crashlytics.android.Crashlytics
-import com.crashlytics.android.answers.Answers
 import io.fabric.sdk.android.Fabric;
 import com.twitter.sdk.android.core.TwitterCore;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
@@ -29,15 +28,16 @@ class MainApplication : Application() {
 
         Fabric.with(this, TwitterCore(authConfig), digits)
 
-        authCallback = object : AuthCallback { // FIXME : zwraca nieprawidłowy obiekt?
+        authCallback = object : AuthCallback {
             override fun failure(exception: DigitsException?) {
                 Crashlytics.logException(exception)
-                // dialog niepowodzenia
+                // TODO : dialog niepowodzenia
             }
 
-            override fun success(session: DigitsSession, phoneNumber: String){
+            override fun success(session: DigitsSession, phoneNumber: String?){
+                val phone = phoneNumber ?: session.phoneNumber
                 Toast.makeText(getApplicationContext(),
-                        "Poprawnie zalogowano numerem: ${phoneNumber}",
+                        "Poprawnie zalogowano numerem: ${phone}",
                         Toast.LENGTH_SHORT).show();
             }
         }
