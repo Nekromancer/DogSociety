@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Dog Society</string>
     <string name="title_activity_login">Logowanie</string>
+    <string name="email">Email</string>
+    <string name="password">Hasło</string>
+    <string name="login">Zaloguj</string>
+    <string name="no_account_register">Nie masz konta? Zarejestruj się</string>
+    <string name="enter_valid_email">Wprowadź poprawny adres email</string>
+    <string name="enter_valid_password">Hasło powinno mieć między 4 a 15 znaków alfanumerycznych</string>
+    <string name="failed_login">Błąd podczas logowania</string>
+    <string name="authorizing_progress">Trwa autoryzacja...</string>
 </resources>
