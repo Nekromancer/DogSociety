@@ -12,10 +12,4 @@
     tools:context="pl.ownvision.dogsociety.LoginActivity"
     tools:showIn="@layout/activity_login">
 
-    <com.digits.sdk.android.DigitsAuthButton
-        android:id="@+id/auth_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
 </RelativeLayout>
