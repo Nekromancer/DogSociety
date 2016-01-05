@@ -9,6 +9,7 @@ import org.hamcrest.Matchers.nullValue
 import org.junit.Before
 import org.junit.Test
 import org.robolectric.Robolectric
+import pl.ownvision.dogsociety.BaseRobolectricTest
 import pl.ownvision.dogsociety.R
 
 class LoginActivityTest : BaseRobolectricTest() {
