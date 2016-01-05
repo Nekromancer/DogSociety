@@ -54,15 +54,40 @@ class LoginActivityTest : BaseRobolectricTest() {
 
     @Test
     fun loginWithInvalidEmail() {
-        emailInput!!.text.append("test")
+        emailInput!!.text.append("test") // no domain
         loginActivity!!.find<Button>(R.id.btn_login).performClick()
-
         assertThat(emailInput!!.error, notNullValue())
-        emailInput!!.text.append("@gmail")
+
+        emailInput!!.text.append("@gmail") //bad domain
         loginActivity!!.find<Button>(R.id.btn_login).performClick()
 
         assertThat(emailInput!!.error, notNullValue())
     }
 
-    // TODO : Invalid password
+    @Test
+    fun loginWithInvalidPassword() {
+        passwordInput!!.text.append("tes") // 3 letters
+        loginActivity!!.find<Button>(R.id.btn_login).performClick()
+        assertThat(passwordInput!!.error, notNullValue())
+
+        passwordInput!!.text.append("asdfzxcvasdfs") // 16 letters
+        loginActivity!!.find<Button>(R.id.btn_login).performClick()
+        assertThat(passwordInput!!.error, notNullValue())
+
+        passwordInput!!.text.clear()
+        passwordInput!!.text.append("test")
+
+        assertThat(passwordInput!!.error, nullValue())
+    }
+
+    @Test
+    fun successfullyValidateEmailAndPassword() {
+        emailInput!!.text.append("test@gmail.com")
+        passwordInput!!.text.append("test")
+
+        loginActivity!!.find<Button>(R.id.btn_login).performClick()
+
+        assertThat(emailInput!!.error, nullValue())
+        assertThat(passwordInput!!.error, nullValue())
+    }
 }
