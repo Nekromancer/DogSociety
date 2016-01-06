@@ -59,6 +59,15 @@ android {
 
 
     }
+
+    signingConfigs {
+        release {
+            storeFile file("release.jks")
+            storePassword System.getenv("DOG_SOCIETY_KEYSTORE_PASSWORD")
+            keyAlias System.getenv("DOG_SOCIETY_KEY_ALIAS")
+            keyPassword System.getenv("DOG_SOCIETY_KEY_PASSWORD")
+        }
+    }
     
     buildTypes {
         debug {
@@ -67,6 +76,7 @@ android {
         release {
             minifyEnabled false // TODO : naprawić
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
 
     }
