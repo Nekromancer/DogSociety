@@ -13,10 +13,11 @@ android:
 
 before_install:
   - chmod +x ./gradlew
+  - export TERM=dumb
 
 script:
-  - TERM=dumb ./gradlew test
-  - TERM=dumb ./gradlew assembleRelease crashlyticsUploadDistributionRelease
+  - ./gradlew test
+  - if [ $TRAVIS_BRANCH = "beta" ]; then ./gradlew assembleRelease crashlyticsUploadDistributionRelease; fi
 
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
