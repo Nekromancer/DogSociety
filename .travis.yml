@@ -16,7 +16,7 @@ before_install:
 
 script:
   - TERM=dumb ./gradlew test
-  - TERM=dumb ./gradlew build
+  - TERM=dumb ./gradlew assembleRelease crashlyticsUploadDistributionRelease
 
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
