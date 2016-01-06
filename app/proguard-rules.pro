@@ -15,3 +15,18 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+-keep class com.crashlytics.** { *; }
+-keep class com.crashlytics.android.**
+-keepattributes SourceFile,LineNumberTable,*Annotation*
+
+-dontwarn kotlin.**
+-dontwarn com.parse.*
+-dontwarn org.w3c.dom.events.*
+-dontwarn org.jetbrains.kotlin.di.InjectorForRuntimeDescriptorLoader
+
+-keep class com.parse.** { *; }
+
+-keepclassmembers public class com.cypressworks.kotlinreflectionproguard.** {
+    public *;
+}
