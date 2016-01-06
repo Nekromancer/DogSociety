@@ -9,13 +9,14 @@ android:
     - android-23
     - android-15
     - extra-android-support
+    - extra-android-m2repository
 
 before_install:
   - chmod +x ./gradlew
 
 script:
-  - ./gradlew test
-  - ./gradlew build
+  - TERM=dumb ./gradlew test
+  - TERM=dumb ./gradlew build
 
 before_cache:
   - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
