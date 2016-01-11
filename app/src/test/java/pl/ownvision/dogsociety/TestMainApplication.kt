@@ -5,7 +5,6 @@ var terminated: Boolean = false
 
 class TestMainApplication : MainApplication() {
 
-
     override fun onCreate() {
         if (!created) {
             super.onCreate()

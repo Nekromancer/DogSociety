@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<notices>
+    <notice>
+        <name>Dagger 2</name>
+        <url>http://google.github.io/dagger/</url>
+        <copyright>Copyright 2012 Square, Inc.
+Copyright 2012 Google, Inc.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Robolectric</name>
+        <url>http://robolectric.org/</url>
+        <copyright>Copyright (c) 2010 Xtreme Labs and Pivotal Labs</copyright>
+        <license>MIT License</license>
+    </notice>
+
+    <notice>
+        <name>Mockito</name>
+        <url>http://mockito.org/</url>
+        <copyright>Copyright (c) 2007 Mockito contributors</copyright>
+        <license>MIT License</license>
+    </notice>
+
+    <notice>
+        <name>Hamcrest</name>
+        <url>http://hamcrest.org/</url>
+        <copyright>Copyright 2012- hamcrest.org</copyright>
+        <license>BSD 3-Clause License</license>
+    </notice>
+
+    <notice>
+        <name>Kotlin</name>
+        <url>https://kotlinlang.org/</url>
+        <copyright>Copyright 2010-2015 JetBrains s.r.o.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>KAndroid</name>
+        <url>https://github.com/pawegio/KAndroid</url>
+        <copyright>Copyright 2015 Paweł Gajda</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Parse Android SDK</name>
+        <url>https://github.com/ParsePlatform/Parse-SDK-Android</url>
+        <copyright>Copyright (c) 2015-present, Parse, LLC. All rights reserved.</copyright>
+        <license>BSD 3-Clause License</license>
+    </notice>
+
+    <notice>
+        <name>Gradle Versions Plugin</name>
+        <url>https://github.com/ben-manes/gradle-versions-plugin</url>
+        <copyright></copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+
+    <notice>
+        <name>Fabric tools</name>
+        <url>https://github.com/twitter/twitter-kit-android</url>
+        <copyright>Copyright 2015 Twitter, Inc.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+</notices>

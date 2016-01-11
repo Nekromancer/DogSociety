@@ -17,6 +17,7 @@ before_install:
 
 script:
   - ./gradlew test
+  - if [ $TRAVIS_BRANCH != "beta" ]; then ./gradlew assembleRelease; fi
   - if [ $TRAVIS_BRANCH = "beta" ]; then ./gradlew assembleRelease crashlyticsUploadDistributionRelease; fi
 
 before_cache:
