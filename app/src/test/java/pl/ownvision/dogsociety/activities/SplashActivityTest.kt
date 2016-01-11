@@ -13,7 +13,7 @@ import org.robolectric.Shadows.*
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.*
 
-class SplashActivityTest : BaseRobolectricTest() {
+class SplashActivityTest : BaseRobolectric() {
 
     lateinit var activity: SplashActivity
 

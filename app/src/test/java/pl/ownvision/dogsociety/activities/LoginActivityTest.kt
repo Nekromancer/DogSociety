@@ -9,10 +9,10 @@ import org.hamcrest.Matchers.nullValue
 import org.junit.Before
 import org.junit.Test
 import org.robolectric.Robolectric
-import pl.ownvision.dogsociety.BaseRobolectricTest
+import pl.ownvision.dogsociety.BaseRobolectric
 import pl.ownvision.dogsociety.R
 
-class LoginActivityTest : BaseRobolectricTest() {
+class LoginActivityTest : BaseRobolectric() {
 
     var loginActivity: LoginActivity? = null
     var emailInput: EditText? = null

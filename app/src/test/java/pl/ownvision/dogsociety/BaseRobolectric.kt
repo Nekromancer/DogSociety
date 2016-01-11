@@ -6,4 +6,4 @@ import org.robolectric.annotation.Config
 
 @RunWith(RobolectricGradleTestRunner::class)
 @Config(constants = BuildConfig::class, sdk = intArrayOf(21), application = TestMainApplication::class)
-public abstract class BaseRobolectricTest {}
+public abstract class BaseRobolectric {}

@@ -1,9 +1,11 @@
 package pl.ownvision.dogsociety
 
-var created: Boolean = false
-var terminated: Boolean = false
-
 class TestMainApplication : MainApplication() {
+
+    companion object {
+        @JvmStatic public var created: Boolean = false
+        @JvmStatic public var terminated: Boolean = false
+    }
 
     override fun onCreate() {
         if (!created) {
