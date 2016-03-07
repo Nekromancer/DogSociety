@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dog Society</string>
+    <string name="app_name" translatable="false">Dog Society</string>
     <string name="title_activity_login">Logowanie</string>
     <string name="email">Email</string>
     <string name="password">Hasło</string>
@@ -9,6 +9,6 @@
     <string name="enter_valid_password">Hasło powinno mieć między 4 a 15 znaków alfanumerycznych</string>
     <string name="failed_login">Błąd podczas logowania</string>
     <string name="authorizing_progress">Trwa autoryzacja...</string>
-    <string name="drawer_open">open</string>
-    <string name="drawer_close">close</string>
+    <string name="drawer_open" translatable="false">open</string>
+    <string name="drawer_close" translatable="false">close</string>
 </resources>
