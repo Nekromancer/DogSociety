@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 R.string.drawer_open,
                 R.string.drawer_close);
 
-        drawer_layout.setDrawerListener(drawerToggle);
+        drawer_layout.addDrawerListener(drawerToggle);
         drawerToggle.syncState()
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
         supportActionBar?.setHomeButtonEnabled(true);
