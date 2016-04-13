@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.view.MenuItem
+import android.widget.Toast
+import com.pawegio.kandroid.toast
 import de.psdev.licensesdialog.LicensesDialog
 import kotlinx.android.synthetic.main.activity_main.*
 import pl.ownvision.dogsociety.R
@@ -18,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        supportActionBar.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toolbar.setNavigationOnClickListener {
             if(drawer_layout.isDrawerOpen(GravityCompat.START)) {
                 drawer_layout.closeDrawer(GravityCompat.START)
@@ -35,8 +37,8 @@ class MainActivity : AppCompatActivity() {
 
         drawer_layout.setDrawerListener(drawerToggle);
         drawerToggle.syncState()
-        supportActionBar.setDisplayHomeAsUpEnabled(true);
-        supportActionBar.setHomeButtonEnabled(true);
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.setHomeButtonEnabled(true);
 
         navigation_view.setNavigationItemSelectedListener { menuItem ->
             drawer_layout.closeDrawer(GravityCompat.START)
@@ -48,6 +50,8 @@ class MainActivity : AppCompatActivity() {
                 else -> true
             }
         }
+
+        toast("test")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
